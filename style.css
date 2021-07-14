@@ -1,0 +1,369 @@
+
+/* --------------------------------------
+                Font
+-------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+/* --------------------------------------
+        Common  Style
+-------------------------------------- */
+
+*{
+    padding:0px;
+    margin: 0px;
+}
+body{
+    width:1440px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --------------------------------------
+            Header Style
+-------------------------------------- */
+
+header{
+    width:1440px;
+    background-color: #2D25A0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navigation-and-banar{
+    width: 1143px;
+    padding-top: 42px;
+}
+
+/* --------------------------------------
+            Navigation Style
+-------------------------------------- */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menubar ul {
+    list-style-type:none;
+    display: flex;
+}
+
+.res-menu-icon {
+    display:none;
+    font-size: 16px;
+    margin-right: 36px;
+    color:white;
+}
+.menubar ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: none;
+    margin-right: 36px;;
+}
+
+
+/* --------------------------------------
+                Banar Style
+-------------------------------------- */
+.top-banar{
+    display: flex;
+    justify-content: center;
+    margin:49px 0 86px 0;
+    
+}
+.banar-text{
+    padding-right: 102px;
+    padding-bottom: 83px;
+    font-weight: bold;
+}
+
+.banar-text h1{
+    font-size: 64px;
+    color:white;
+    padding-top:72px;
+    padding-bottom: 27px;
+}
+.link-style{
+    color:white;
+    background-color:#E02C6D;
+    text-decoration: none;
+    font-size: 16;
+    padding:5px 15px;
+    word-spacing: 10px;
+}
+
+.banar-image img{
+    width: 556px;
+}
+
+/* ----------------------------------------------
+                Animation Effect
+---------------------------------------------- */
+.top-banar:hover .image-animation{
+    /* opacity: 0%; */
+    transform: translateX(-575px)  rotateY(180deg);
+    transition:all 2s linear;
+}
+
+.top-banar:hover .banar-text{
+    transform: translateX(650px);
+    text-align:right;  
+    transition:all 2s linear;
+}
+
+/* -------------------------------------
+            Main Style 
+------------------------------------- */
+
+main{
+    width: 1104px;
+    margin:35px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* --------------------------------------
+ First Section (blog-container) Style
+-------------------------------------- */
+
+.blog-container{
+    width:1050px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 45px;
+    column-gap: 30px;
+}
+article{
+    padding: 15px;
+    box-shadow: 0 1px 25px gray;
+    width:300px;
+    font-size: 16px;
+}
+article img{
+   width:300px;
+}
+
+
+.artical-heading{
+    margin-bottom:10px;
+    margin-top:16px;
+    font-size: 28px;
+}
+
+
+/* --------------------------------------
+ Second Section (feature-container) Style
+-------------------------------------- */
+
+.feature-container{
+    width:1104 px;
+    display:flex;
+    margin-top: 165px;
+}
+
+.feature{
+    margin-right: 69px;
+}
+.feature-heading{
+    font-weight:900;
+    font-size: 48px;
+    padding-top: 59px;
+    padding-bottom: 8px;
+}
+
+.feature-details{
+    margin-bottom: 24px;
+}
+
+.feature-thumb img{
+    width:567px;
+}
+
+
+/* --------------------------------------
+            Bonus Section
+-------------------------------------- */
+.bonus-sec{
+    width:1160px;
+    margin-top: 50px;
+
+}
+
+.latest-news{
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom:20px;
+}
+
+.newses, .news-letter-subs-and-video{
+    display:flex;
+    padding: 10px;
+}
+.news{
+    padding:10px;
+    margin:10px;
+    height: 550px;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 1px 0 20px gray;
+    text-align:center;
+}
+.news img{
+    width:90%;
+}
+.news h3{
+    font-size: 24px;
+}
+.news-letter-subs{
+    padding: 30px;
+    line-height: 40px;
+}
+
+.news-letter-subs, .video{
+    width: 550px;
+    padding:30px;
+    margin:10px;
+    box-shadow: 1px 0 20px gray;
+    text-align:center;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+}
+.news p{
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.news-letter-subs-and-video h4{
+    font-size: 20px;
+
+}
+
+/* --------------------------------------
+            Footer Style
+-------------------------------------- */
+
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1160px;
+    margin-top: 158px;
+}
+
+.social-media-icon{
+    padding:0 20px;
+}
+.font-size{
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* ----------------------------------------
+    Media Quary for Mobile Device
+-----------------------------------------*/
+
+
+@media only screen and (max-width:688px) {
+    
+    body, main, footer{
+        width:100%;
+        text-align: center;
+        align-items: center;
+    }
+    header{
+        width:100%;
+        word-spacing: 2px;
+    }
+
+    section, .top-banar{
+        width:90%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navigation-and-banar{
+        width:80%;
+        position: relative;
+    }
+
+    .blog-container{
+        width:100%;
+        grid-template-columns: 1fr;
+        row-gap: 45px;
+        justify-items: center;
+    }
+
+    img{
+        width:100%;
+    }
+    .res-menu-icon {
+        display:block;
+    }
+    
+    .menubar ul li{
+        display:none;
+    }
+      
+    .feature-container{
+        margin-top: 35px;
+    }
+
+    .menubar:hover ul{
+        flex-direction: column;
+        position: absolute;
+        top:35px;
+        left:0;
+    }
+    .menubar:hover ul li{
+        display:block;
+    }
+
+    .top-banar:hover .image-animation{
+        /* opacity: 0%; */
+        transform: translateY(-500px)  rotateY(180deg);
+        transition:all 2s linear;
+    }
+    
+    .top-banar:hover .banar-text{
+        transform: translateY(300px);
+        text-align:right;  
+        transition:all 2s linear;
+    }
+
+    .feature-thumb img, .banar-image img{
+        width:100%;
+        margin-top:20px;
+    }
+    .feature-thumb img{width:90%;
+        margin-top:20px;
+    }
+    
+    .newses, .news-letter-subs-and-video{
+        flex-direction: column;
+    }
+    .latest-news{
+        align-items: center;
+    }
+
+    .news-letter-subs, iframe, .video{
+        width:100%;
+    }
+    .logo img{
+        width:80%;
+        padding:0 10%;
+    }
+
+    footer{
+        margin-top: 35px;
+    }
+}
