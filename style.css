@@ -50,7 +50,7 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.menubar ul {
+#menubar ul {
     list-style-type:none;
     display: flex;
 }
@@ -61,7 +61,7 @@ nav{
     margin-right: 36px;
     color:white;
 }
-.menubar ul li a{
+#menubar ul li a{
     color:white;
     text-decoration: none;
     font-size: 16px;
@@ -109,8 +109,8 @@ nav{
 ---------------------------------------------- */
 .top-banar:hover .image-animation{
     /* opacity: 0%; */
-    transform: translateX(-575px)  rotateY(180deg);
-    transition:all 2s linear;
+    transform: translateX(-575px)  rotateY(180deg) ;
+    transition:all 2s ease-in;
 }
 
 .top-banar:hover .banar-text{
@@ -310,7 +310,7 @@ footer{
         display:block;
     }
     
-    .menubar ul li{
+    #menubar ul li{
         display:none;
     }
       
@@ -318,13 +318,13 @@ footer{
         margin-top: 35px;
     }
 
-    .menubar:hover ul{
+    #menubar:hover ul{
         flex-direction: column;
         position: absolute;
         top:35px;
         left:0;
     }
-    .menubar:hover ul li{
+    #menubar:hover ul li{
         display:block;
     }
 
@@ -355,8 +355,8 @@ footer{
         align-items: center;
     }
 
-    .news-letter-subs, iframe, .video{
-        width:100%;
+    .news, .news-letter-subs, iframe, .video{
+        width:80%;
     }
     .logo img{
         width:80%;
